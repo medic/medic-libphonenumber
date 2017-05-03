@@ -1,7 +1,7 @@
 /**
 * Our wrapper around google's libphonenumber.
 */
-var phonenumber = require('libphonenumber/libphonenumber'),
+var phonenumber = require('google-libphonenumber'),
     CHARACTER_REGEX = /[a-z]/i;
 
 var _init = function(settings, phone) {

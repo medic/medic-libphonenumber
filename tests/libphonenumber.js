@@ -1,7 +1,4 @@
-var proxyquire = require('proxyquire').noCallThru();
-var phonenumber = proxyquire('../../../packages/libphonenumber/libphonenumber/utils', {
-  'libphonenumber/libphonenumber': require('../../../packages/libphonenumber/libphonenumber/libphonenumber')
-});
+var phonenumber = require('../utils');
 
 var NZ_DOMESTIC_VALID = '0275552636';
 var NZ_DOMESTIC_INVALID = '5155556442123'; // right number of digits but invalid number!
